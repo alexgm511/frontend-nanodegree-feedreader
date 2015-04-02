@@ -31,7 +31,7 @@ $(function() {
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
          */
-        it('feeds have URL defined and URL is not empty', function() {
+        it('have URL defined and the URL is not empty', function() {
 			allFeeds.forEach(function(feed) {
 				expect(feed.url).toBeDefined();
 				expect(feed.url.length).not.toBe(0);
@@ -43,7 +43,7 @@ $(function() {
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
-        it('feeds have a name defined and name is not empty', function() {
+        it('have a name defined and the name is not empty', function() {
 			allFeeds.forEach(function(feed) {
 				expect(feed.name).toBeDefined();
 				expect(feed.name.length).not.toBe(0);
@@ -97,15 +97,12 @@ $(function() {
 		var container = $('.feed');
 		
 		beforeEach(function(done) {
-			setTimeout(function() {
-				loadFeed(0);
-				done();
-			}, 1);
+			loadFeed(0);
+			done();
 		});
 		
-		it('should get called and have at least one feed.', function(done) {
+		it('should get called and have at least one feed.', function() {
 			expect(container.length).not.toBe(0);
-			done();
 		});
 
 	});
@@ -124,20 +121,17 @@ $(function() {
 			newId;
 
 		beforeEach(function(done) {
-			setTimeout(function() {
-				firstHeadline = $('.feed .entry h2:first');
-				feedList.on('click', 'a', function() {
-					newHeadline = $(this).text();
-					newId = $(this).data('id');
-					loadFeed(newId);
-				});
-				done();
-			}, 1);
+			firstHeadline = $('.feed .entry h2:first');
+			feedList.on('click', 'a', function() {
+				newHeadline = $(this).text();
+				newId = $(this).data('id');
+				loadFeed(newId);
+			});
+			done();
 		});
 		
-		it('should change the feed content', function(done) {
+		it('should change the feed content', function() {
 			expect(newHeadline).not.toBe(firstHeadline);
-			done();
 		});
 
 	});
