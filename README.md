@@ -9,21 +9,21 @@ Project with a web-based application that reads RSS feeds using Jasmine to pract
 
 Components
 ----------
-index.html
-js/app.js
-jasmine/spec/feedreader.js
+index.html<br>
+js/app.js<br>
+jasmine/spec/feedreader.js<br>
 
-css/style.css
-css/icomoon.css
-css/normalize.css
-jasmine/lib/jasmine-2.1.2/boot.js
-jasmine/lib/jasmine-2.1.2/console.js
-jasmine/lib/jasmine-2.1.2/jasmine.js
-jasmine/lib/jasmine-2.1.2/jasmine-html.js
-jasmine/lib/jasmine-2.1.2/jasmine.css
-jasmine/lib/jasmine-2.1.2/favicon.png
-fonts/icomoon.eot
-fonts/icomoon.svg
+css/style.css<br>
+css/icomoon.css<br>
+css/normalize.css<br>
+jasmine/lib/jasmine-2.1.2/boot.js<br>
+jasmine/lib/jasmine-2.1.2/console.js<br>
+jasmine/lib/jasmine-2.1.2/jasmine.js<br>
+jasmine/lib/jasmine-2.1.2/jasmine-html.js<br>
+jasmine/lib/jasmine-2.1.2/jasmine.css<br>
+jasmine/lib/jasmine-2.1.2/favicon.png<br>
+fonts/icomoon.eot<br>
+fonts/icomoon.svg<br>
 fonts/icomoon.ttf
 
 
