@@ -1,10 +1,10 @@
 /* feedreader.js
  *
  * This is the spec file that Jasmine will read and contains
- * all of the tests that will be run against your application.
+ * all of the tests that will be run against the application.
  */
 
-/* We're placing all of our tests within the $() function,
+/* All of the tests are placed within the $() function,
  * since some of these tests may require DOM elements. We want
  * to ensure they don't run until the DOM is ready.
  */
@@ -86,8 +86,10 @@ $(function() {
    describe('Initial Entries', function() {
 
         /* This test ensures that when the asynchronous loadFeed function 
-         * is called and completes its work, there is at least one .entry element
-         * in the .feed container.
+         * is called and completes its work, there is at least one '.entry' 
+         * element in the '.feed' container.
+		 * The setTimeout function is used in the beforeEach function to delay 
+		 * long enough for the '.feed' element to be populated. 
          */
 		var retFeed;
 		
@@ -105,12 +107,17 @@ $(function() {
 
 	});
 
-    /* TODO: Write a new test suite named "New Feed Selection" */
+    /* Test suite for selection of a new feed */
 	describe('New Feed Selection', function() {
 
-        /* TODO: Write a test that ensures when a new feed is loaded
-         * by the loadFeed function that the content actually changes.
-         * Remember, loadFeed() is asynchronous.
+        /* Test that ensures that when a new feed is loaded
+         * by the loadFeed function the content actually changes.
+         * Again setTimeout is used to ensure that the function 
+		 * delays long enough for the comparison variables to 
+		 * be populated.
+		 * One feed is called and the result is stored in a variable.
+		 * Then a different feed is called and the result is compared
+		 * with the result stored in the first variable.
          */
 		 
 		var firstFeed,
